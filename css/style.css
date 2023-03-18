@@ -782,6 +782,8 @@ sup {
   display: flex;
   justify-content: center;
   width: 100%;
+  padding-left: 0;
+  padding-right: 0;
   margin-bottom: 33px;
   background-color: #f4f7f6;
 }
@@ -1056,6 +1058,7 @@ sup {
   }
 
   .icons {
+    width: auto;
     margin-bottom: 5px;
   }
 
