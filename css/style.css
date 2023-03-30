@@ -279,7 +279,7 @@ button:focus-visible {
 .photo-article {
   display: block;
   width: 382px;
-  min-height: 294px;
+ 
 }
 
 .text-article {
@@ -757,7 +757,6 @@ sup {
   text-transform: uppercase;
   color: #ffffff;
   text-align: center;
-  height: 50px;
   padding-top: 17px;
   padding-bottom: 17px;
   padding-left: 28px;
@@ -780,12 +779,13 @@ sup {
 
 .icons {
   display: flex;
-  justify-content: center;
   width: 100%;
   padding-left: 0;
   padding-right: 0;
+  justify-content: center;
   margin-bottom: 33px;
   background-color: #f4f7f6;
+
 }
 
 .social-icons {
@@ -1039,7 +1039,7 @@ sup {
 
   .products-content:nth-child(-n+2) {
     margin-bottom: 24px;
-    margin-right: 20px;
+    margin-right: 2%;
     margin-left: 0;
   }
 
@@ -1389,7 +1389,7 @@ sup {
 }
 
 .popup-wrapper {
-  display: /*flex*/ none;
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
@@ -1398,8 +1398,7 @@ sup {
   z-index: 10;
   width: 100%;
   height: 100%;
-  background-color: #000000;
-  opacity: 0.600;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .popup {
@@ -1414,12 +1413,10 @@ sup {
 
 }
 
-.popup-selection,
-.popup-checkbox,
-.popup-field {
+.popup-select {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
+  
 }
 
 
@@ -1443,6 +1440,13 @@ sup {
   opacity: 0.4;
 }
 
+.popup-selection,
+.popup-checkbox,
+.popup-field {
+  display: flex;
+  margin-top: 25px;
+}
+
 .selection-name,
 .checkbox-name,
 .field-name,
@@ -1450,7 +1454,6 @@ sup {
   font-size: 13px;
   font-weight: 400;
   color: #000000;
-
 }
 
 label .selection-list,
@@ -1529,14 +1532,12 @@ textarea[placeholder] {
   
 }
 
-
-.checkbox-buttons {
-  display: flex;
-  margin-top: 10px;
+.popup-checkbox {
+  flex-direction: column;
 }
 
-.checkbox-text {
-  display: inline-block;
+.checkbox-buttons {
+  margin-top: 10px;
 }
 
 .checkbox-text-1,
@@ -1570,6 +1571,7 @@ textarea[placeholder] {
 }
 
 .checkbox {
+  display: flex;
   position: absolute;
   clip: rect(1px 1px 1px 1px);
   width: 1px;
@@ -1594,7 +1596,7 @@ textarea[placeholder] {
   .checkbox-text-2 {
   margin-left: 25px;
 }
-  .popup__close {
+  .popup-close {
     font-size: 30px;
   }
 }

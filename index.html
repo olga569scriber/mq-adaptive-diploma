@@ -258,7 +258,7 @@
 						<p class="product-price-old">1000 &#8381;</p>
 						<p class="product-price-new">800 &#8381;</p>
 					</div>
-					<button class="product-button" type="submit">В магазин</button>
+					<a href="#0" class="product-button">В магазин</a>
 				</div>
 			</div>
 		</article>
@@ -277,7 +277,7 @@
 						<p class="product-price-old old-2">500 &#8381;</p>
 						<p class="product-price-new">3000 &#8381;</p>
 					</div>
-					<button class="product-button" type="submit">В магазин</button>
+					<a href="#0" class="product-button">В магазин</a>
 				</div>
 			</div>
 		</article>
@@ -296,7 +296,7 @@
 						<p class="product-price-old">500 &#8381;</p>
 						<p class="product-price-new">400 &#8381;</p>
 					</div>
-					<button class="product-button" type="submit">В магазин</button>
+					<a href="#0" class="product-button">В магазин</a>
 				</div>
 			</div>
 		</article>
@@ -320,34 +320,40 @@
 	<div class="popup">
 		<h2 class="popup-title">Ваш фидбек</h2>
 		<section class="popup-forms">
-			<form class="popup-selection" name="popup-selection" method="post" action="">
-				<label for="selection-list">
-					<span class="selection-name">Как часто вы заходите на сайт?</span>
-					<select class="selection-list">
-						<option class="select-option" required>Почти каждый день</option>
-						<option class="select-option">Каждый день</option>
-						<option class="select-option">Раз в несколько дней</option>
-						<option class="select-option">Раз в несколько недель</option>
-						<option class="select-option">Несколько раз в год</option>
-					</select>
-				</label>
-			</form>
-			<form class="popup-checkbox" name="popup-checkbox" method="post" action="">
-				<label for="checkbox-buttons">
-					<span class="checkbox-name">Вы подписаны на e-mail рассылку?</span>
-					<div class="checkbox-buttons">
-						<input class="checkbox" type="checkbox" checked>
-						<span class="checkbox-text-1">Да</span>
-						<input class="checkbox" type="checkbox">
-						<span class="checkbox-text-2">Нет</span>
-					</div>
-				</label>
-			</form>
-			<form class="popup-field" name="popup-field" method="post" action="">
-				<label for="field-text">
-					<span class="field-name">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
-					<textarea class="field-text" rows="8" placeholder="Может, больше рецептов?" required></textarea>
-				</label>
+			<form class="popup-select" name="popup-select" method="post" action="">
+				<div class="popup-selection">
+					<label for="selection-list">
+						<span class="selection-name">Как часто вы заходите на сайт?</span>
+						<select class="selection-list">
+							<option class="select-option" required>Почти каждый день</option>
+							<option class="select-option">Каждый день</option>
+							<option class="select-option">Раз в несколько дней</option>
+							<option class="select-option">Раз в несколько недель</option>
+							<option class="select-option">Несколько раз в год</option>
+						</select>
+					</label>
+				</div>
+				<div class="popup-checkbox">
+					<label for="checkbox-buttons">
+						<span class="checkbox-name">Вы подписаны на e-mail рассылку?</span>
+						<div class="checkbox-buttons">
+							<label>
+								<input class="checkbox" name="popup-radio" type="radio" checked>
+								<span class="checkbox-text-1">Да</span>
+							</label>
+							<label>
+								<input class="checkbox" name="popup-radio" type="radio">
+								<span class="checkbox-text-2">Нет</span>
+							</label>
+						</div>
+					</label>
+				</div>
+				<div class="popup-field">
+					<label for="field-text">
+						<span class="field-name">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+						<textarea class="field-text" rows="8" placeholder="Может, больше рецептов?" required></textarea>
+					</label>
+				</div>
 				<button class="field-button" type="submit">Отправить</button>
 			</form>
 		</section>
