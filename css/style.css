@@ -205,9 +205,6 @@ button:focus-visible {
 
 .text-trends {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
   margin-top: auto;
   margin-left: 22px;
   margin-right: 22px;
@@ -1540,20 +1537,14 @@ textarea[placeholder] {
   margin-top: 10px;
 }
 
-.checkbox-text-1,
-.checkbox-text-2 {
+.checkbox-text {
   font-size: 13px;
   font-weight: 400;
   color: #000000;
-  
+  margin-right: 15px;
 }
 
-.checkbox-text-2 {
-  margin-left: 15px;
-}
-
-.checkbox-text-1::before,
-.checkbox-text-2::before {
+.checkbox-text::before {
   margin-right: 6px;
   content: "";
   display: inline-block;
@@ -1564,9 +1555,10 @@ textarea[placeholder] {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 20px;
+  
 }
 
-.checkbox:checked ~ .checkbox-text-1::before {
+.checkbox:checked ~ .checkbox-text::before {
   background-image: url("../svg/form-circle.svg");
 }
 
